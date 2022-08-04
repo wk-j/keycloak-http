@@ -6,6 +6,7 @@ services:
     environment:
       - KEYCLOAK_ADMIN=admin
       - KEYCLOAK_ADMIN_PASSWORD=admin
+      - KC_HTTP_RELATIVE_PATH=/auth
     command: start-dev
     ports:
       - 4000:8080
